@@ -17,12 +17,7 @@
         <h1>InstaGrim ! </h1>
         <h2>Your world in Black and White</h2>
         </header>
-        <nav>
-            <ul>
-                
-                <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
-            </ul>
-        </nav>
+        <%@include file="nav.jsp"%>
        
         <article>
             <h3>Register as user</h3>
@@ -32,14 +27,12 @@
                     <li>Password <input type="password" name="password"></li>
                 </ul>
                 <br/>
-                <input type="submit" value="Regidter"> 
+                <input type="submit" value="Register"> 
             </form>
 
         </article>
         <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-            </ul>
+            <%@include file="footer.jsp"%> 
         </footer>
     </body>
 </html>
