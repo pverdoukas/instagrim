@@ -1,7 +1,7 @@
 <%-- 
     Document   : Profile
     Created on : 29-Sep-2016, 21:50:20
-    Author     : Dan
+    Author     : PVerdoukas
 --%>
 
 <%@page import="java.util.*"%>
