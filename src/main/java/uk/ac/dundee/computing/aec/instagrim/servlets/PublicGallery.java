@@ -23,7 +23,7 @@ import uk.ac.dundee.computing.aec.instagrim.stores.Pic;
 
 /**
  *
- * @author Danstev
+ * @author PVerdoukas
  */
 @WebServlet(name = "PublicGallery", urlPatterns = {"/PublicGallery"})
 public class PublicGallery extends HttpServlet {
