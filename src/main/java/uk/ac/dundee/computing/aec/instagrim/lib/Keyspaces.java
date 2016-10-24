@@ -24,10 +24,11 @@ public final class Keyspaces {
                     + " thumb blob,"
                     + " processed blob,"
                     + " imagelength int,"
-                    + " thumblength int,"
-                    + "  processedlength int,"
+                    + " thumblength int ,"
+                    + " processedlength int,"
                     + " type  varchar,"
                     + " name  varchar,"
+                    + " comments set<uuid>,"
                     + " PRIMARY KEY (picid)"
                     + ")";
             String Createuserpiclist = "CREATE TABLE if not exists instagrim.userpiclist (\n"
@@ -49,6 +50,14 @@ public final class Keyspaces {
                     + "      email set<text>,\n"
                     + "      addresses  map<text, frozen <address>>\n"
                     + "  );";
+            //Comment table
+            String CreateCommentTable = "CREATE TABLE if not exists instagrim.comments ("
+                    + "commentid uuid,"
+                    + "user varchar,"
+                    + "comment text,"
+                    + "comment_added timestamp,"
+                    + "PRIMARY KEY (commentid)"
+                    + ");";
             Session session = c.connect();
             try {
                 PreparedStatement statement = session
@@ -79,6 +88,7 @@ public final class Keyspaces {
             } catch (Exception et) {
                 System.out.println("Can't create user pic list table " + et);
             }
+            
             System.out.println("" + CreateAddressType);
             try {
                 SimpleStatement cqlQuery = new SimpleStatement(CreateAddressType);
@@ -86,6 +96,7 @@ public final class Keyspaces {
             } catch (Exception et) {
                 System.out.println("Can't create Address type " + et);
             }
+            
             System.out.println("" + CreateUserProfile);
             try {
                 SimpleStatement cqlQuery = new SimpleStatement(CreateUserProfile);
@@ -93,6 +104,16 @@ public final class Keyspaces {
             } catch (Exception et) {
                 System.out.println("Can't create Address Profile " + et);
             }
+            
+            try {
+                SimpleStatement cqlQuery = new SimpleStatement(CreateCommentTable);
+                session.execute(cqlQuery);
+            }
+            catch (Exception et){
+                System.out.println("Can't create comments table " + et);
+            }
+            System.out.println("" + CreateCommentTable);
+
             session.close();
 
         } catch (Exception et) {
