@@ -1,7 +1,7 @@
 <%-- 
     Document   : UserProfile
     Created on : 23-Oct-2016, 19:15:59
-    Author     : Danstev
+    Author     : PVerdoukas
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
