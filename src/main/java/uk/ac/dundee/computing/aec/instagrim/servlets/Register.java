@@ -31,9 +31,6 @@ public class Register extends HttpServlet {
         cluster = CassandraHosts.getCluster();
     }
 
-
-
-
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -63,7 +60,7 @@ public class Register extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Used only for doPost which takes username and password parameter and registers the user.";
     }// </editor-fold>
 
 }
