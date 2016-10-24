@@ -25,7 +25,7 @@ import uk.ac.dundee.computing.aec.instagrim.stores.LoggedIn;
 
 /**
  *
- * @author Danstev
+ * @author PVerdoukas
  */
 @WebServlet(name = "Profile", urlPatterns = {"/Profile/*", "/UserProfile/*"})
 public class Profile extends HttpServlet {
