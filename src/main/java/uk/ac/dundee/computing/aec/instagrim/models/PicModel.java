@@ -212,5 +212,28 @@ public class PicModel {
         return p;
 
     }
+    
+    public java.util.LinkedList<Pic> getNewest()
+    {
+        java.util.LinkedList<Pic> pics = new java.util.LinkedList<>();
+        Session session = cluster.connect("instagrim");
+        PreparedStatement ps = session.prepare("select * from Pics LIMIT 10");
+        ResultSet rs = null;
+        BoundStatement boundStatement = new BoundStatement(ps);
+        rs = session.execute(boundStatement.bind());
+        if (rs.isExhausted()) {
+            System.out.println("No Images returned");
+            return null;
+        } else {
+        for (Row row : rs) {
+                Pic pic = new Pic();
+                java.util.UUID UUID = row.getUUID("picid");
+                System.out.println("UUID" + UUID.toString());
+                pic.setUUID(UUID);
+                pics.add(pic);
+            }
+        }
+        return pics;
+    }
 
 }
