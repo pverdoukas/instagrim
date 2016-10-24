@@ -1,7 +1,7 @@
 <%-- 
     Document   : logout.jsp
     Created on : 11-Oct-2016, 22:21:14
-    Author     : Danstev
+    Author     : PVerdoukas
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
