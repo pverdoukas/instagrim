@@ -24,7 +24,7 @@ import uk.ac.dundee.computing.aec.instagrim.models.*;
 
 /**
  * Adapted from picture servlet
- * @author Danstev
+ * @author PVerdoukas
  */
 @WebServlet(name = "postComment", urlPatterns = {"/Comments","/Comments/*"})
 public class Comment extends HttpServlet {
