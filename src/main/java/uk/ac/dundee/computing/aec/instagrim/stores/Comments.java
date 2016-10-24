@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author Danstev
+ * @author PVerdoukas
  */
 public class Comments {
     
