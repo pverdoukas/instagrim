@@ -7,10 +7,69 @@ and open the template in the editor.
     Created on : Sep 27, 2014, 1:34:36 PM
     Author     : Administrator
 */
+body {
+    font-family: "Trebuchet MS",Helvetica,sans-serif;  
+    padding: 5px; padding: 0.5vw;
+}
 
+h1 {
+    background: url('siteImages/banner.png');
+    font-size: 14px; font-size: 3.5vw;
+    text-align: center;
+    background-color: #d1e5e1;
+}
 
-nav {
+h2 {
+    text-align: center;
+    font-size: 10px; font-size: 2.5vw;
+}
+
+h3 {
     text-align: left;
-    border: 2px;
+    font-size: 8px; font-size: 2vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer {
+    width: 100%;
+    position: fixed;
+    
+}
+
+li {
+    padding: 5px; padding: 0.5vw;
+}
+
+li.footer{
+    display: inline;
+    background-color: #d1e5e1;
+    position: relative;
+    text-align: center;
+}
+li.footer:hover{
+    background-color: whitesmoke;
+    color: aquamarine;
+}
+
+li.nav{
+    text-align: right;
+}
+li.nav:hover{
+    background-color: whitesmoke;
+    color: aquamarine;
+}
+
+nav{
     float: right;
+}
+
+article {
+    width: 85%;
+    padding: 5px; padding: 0.5vw;
+    background-color: #c0ffee;
 }
