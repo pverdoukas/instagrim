@@ -1,7 +1,7 @@
 <%-- 
     Document   : comments
     Created on : 19-Oct-2016, 22:54:36
-    Author     : Danstev
+    Author     : PVerdoukas
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
