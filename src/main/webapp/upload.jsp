@@ -9,18 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Instagrim</title>
+        <title>Upload : InstaGrim</title>
         <link rel="stylesheet" type="text/css" href="Styles.css" />
     </head>
     <body>
-        <h1>InstaGrim ! </h1>
+        <h1>Upload your pictures</h1>
         <h2>Your world in Black and White</h2>
-        <nav>
-            <ul>
-                <li class="nav"><a href="upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
-            </ul>
-        </nav>
+        <%@include file="nav.jsp"%>
  
         <article>
             <h3>File Upload</h3>
@@ -33,9 +28,7 @@
 
         </article>
         <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-            </ul>
+            <%@include file="footer.jsp"%> 
         </footer>
     </body>
 </html>
