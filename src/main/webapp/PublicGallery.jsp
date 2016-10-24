@@ -1,7 +1,7 @@
 <%-- 
     Document   : PublicGallery
     Created on : 23-Oct-2016, 20:21:04
-    Author     : Danstev
+    Author     : PVerdoukas
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
